@@ -1,0 +1,1829 @@
+{
+  "calonMahasiswa": [
+    {
+      "id": "1",
+      "namaLengkap": "Anya Forger",
+      "email": "anya.f@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/1.png",
+      "tanggalLahir": "2007-04-01",
+      "negaraAsal": "Jepang",
+      "prodiPilihan": "Teknik Informatika",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "123 Ostania Street, Berlint",
+        "noWhatsapp": "+811234567890",
+        "noPassport": "J12345678",
+        "orangTua": {
+          "nama": "Loid Forger",
+          "pekerjaan": "Psychiatrist",
+          "alamat": "123 Ostania Street, Berlint",
+          "noTelp": "+491234567891"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": null,
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Menunggu Pemeriksaan",
+          "catatan": null
+        },
+        "tesPengetahuan": {
+          "status": "Belum Dimulai",
+          "nilai": null
+        },
+        "wawancara": {
+          "status": "Belum Dimulai",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Ditolak",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Ditolak",
+      "tanggalVerifikasi": "2025-11-27T03:58:20.018Z",
+      "olehAdmin": "Sistem Verifikasi"
+    },
+    {
+      "id": "2",
+      "namaLengkap": "Loid Forger",
+      "email": "loid.f@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/2.png",
+      "tanggalLahir": "2006-11-20",
+      "negaraAsal": "Jerman",
+      "prodiPilihan": "Teknik Informatika",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "123 Ostania Street, Berlint",
+        "noWhatsapp": "+491234567890",
+        "noPassport": "D98765432",
+        "orangTua": {
+          "nama": "Franky Franklin",
+          "pekerjaan": "Informant",
+          "alamat": "123 Ostania Street, Berlint",
+          "noTelp": "+491234567892"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": "/berkas/6.pdf",
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": null
+        },
+        "tesPengetahuan": {
+          "status": "Belum Dimulai",
+          "nilai": null
+        },
+        "wawancara": {
+          "status": "Belum Dimulai",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-1765005744248",
+      "hasilWawancara": null,
+      "statusAkhir": "Wawancara Terjadwal",
+      "tanggalVerifikasi": "2025-12-06T07:03:35.744Z",
+      "olehAdmin": "Admin Verifikasi"
+    },
+    {
+      "id": "3",
+      "namaLengkap": "Yor Briar",
+      "email": "yor.b@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/1.png",
+      "tanggalLahir": "2006-07-12",
+      "negaraAsal": "Jepang",
+      "prodiPilihan": "Teknik Informatika",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "123 Ostania Street, Berlint",
+        "noWhatsapp": "+811234567891",
+        "noPassport": "J87654321",
+        "orangTua": {
+          "nama": "Yuri Briar",
+          "pekerjaan": "Civil Servant",
+          "alamat": "123 Ostania Street, Berlint",
+          "noTelp": "+491234567893"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Dokumen lengkap dan valid per 2025-10-19."
+        },
+        "tesPengetahuan": {
+          "status": "Menunggu Jadwal",
+          "nilai": 85
+        },
+        "wawancara": {
+          "status": "Menunggu Jadwal",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Menunggu Pemeriksaan",
+      "jadwalWawancaraId": "W-1761823751297",
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "4",
+      "namaLengkap": "Damian Desmond",
+      "email": "damian.d@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/2.png",
+      "tanggalLahir": "2007-02-28",
+      "negaraAsal": "Jerman",
+      "prodiPilihan": "Teknik Informatika",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Desmond Estate, Berlint",
+        "noWhatsapp": "+491234567880",
+        "noPassport": "D11122233",
+        "orangTua": {
+          "nama": "Donovan Desmond",
+          "pekerjaan": "Politician",
+          "alamat": "Desmond Estate, Berlint",
+          "noTelp": "+491234567881"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 85
+        },
+        "wawancara": {
+          "status": "Menunggu Jadwal",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-1765040489073",
+      "hasilWawancara": null,
+      "statusAkhir": "Wawancara Terjadwal",
+      "tanggalVerifikasi": "2025-12-06T15:53:54.858Z",
+      "olehAdmin": "Admin Verifikasi"
+    },
+    {
+      "id": "5",
+      "namaLengkap": "Becky Blackbell",
+      "email": "becky.b@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/3.png",
+      "tanggalLahir": "2007-05-15",
+      "negaraAsal": "Inggris",
+      "prodiPilihan": "Teknik Informatika",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Blackbell Manor, London",
+        "noWhatsapp": "+441234567890",
+        "noPassport": "GBR445566",
+        "orangTua": {
+          "nama": "Mr. Blackbell",
+          "pekerjaan": "CEO",
+          "alamat": "Blackbell Manor, London",
+          "noTelp": "+441234567891"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 90
+        },
+        "wawancara": {
+          "status": "Selesai",
+          "hasilId": "fb0f"
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-001",
+      "hasilWawancara": null,
+      "statusAkhir": "Diterima",
+      "tanggalKeputusan": "2025-12-06T13:54:18.717Z",
+      "olehAdmin": "Pimpinan Admisi"
+    },
+    {
+      "id": "6",
+      "namaLengkap": "Franky Franklin",
+      "email": "franky.f@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/4.png",
+      "tanggalLahir": "2006-03-03",
+      "negaraAsal": "Jerman",
+      "prodiPilihan": "Hubungan Internasional",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Tobacco Shop, Berlint",
+        "noWhatsapp": "+491234567870",
+        "noPassport": "D44455566",
+        "orangTua": {
+          "nama": "N/A",
+          "pekerjaan": "N/A",
+          "alamat": "N/A",
+          "noTelp": "N/A"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 78
+        },
+        "wawancara": {
+          "status": "Selesai",
+          "hasilId": "3dnyb8x7q"
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-002",
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "7",
+      "namaLengkap": "Sylvia Sherwood",
+      "email": "sylvia.s@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/1.png",
+      "tanggalLahir": "2006-01-20",
+      "negaraAsal": "Amerika Serikat",
+      "prodiPilihan": "Hubungan Internasional",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "WISE HQ, Berlint",
+        "noWhatsapp": "+12024561111",
+        "noPassport": "USA778899",
+        "orangTua": {
+          "nama": "N/A",
+          "pekerjaan": "N/A",
+          "alamat": "N/A",
+          "noTelp": "N/A"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": "/berkas/6.pdf",
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 95
+        },
+        "wawancara": {
+          "status": "Selesai",
+          "hasilId": "HW-001"
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-003",
+      "hasilWawancara": null,
+      "statusAkhir": "Diterima"
+    },
+    {
+      "id": "8",
+      "namaLengkap": "Henry Henderson",
+      "email": "henry.h@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/2.png",
+      "tanggalLahir": "2006-09-15",
+      "negaraAsal": "Inggris",
+      "prodiPilihan": "Hubungan Internasional",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Eden Academy, Berlint",
+        "noWhatsapp": "+441234567880",
+        "noPassport": "GBR112233",
+        "orangTua": {
+          "nama": "N/A",
+          "pekerjaan": "N/A",
+          "alamat": "N/A",
+          "noTelp": "N/A"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 70
+        },
+        "wawancara": {
+          "status": "Selesai",
+          "hasilId": "HW-002"
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-004",
+      "hasilWawancara": null,
+      "statusAkhir": "Ditolak"
+    },
+    {
+      "id": "9",
+      "namaLengkap": "Yuri Briar",
+      "email": "yuri.b@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/3.png",
+      "tanggalLahir": "2006-11-11",
+      "negaraAsal": "Jepang",
+      "prodiPilihan": "Hubungan Internasional",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "SSS HQ, Berlint",
+        "noWhatsapp": "+811234567860",
+        "noPassport": "J99887766",
+        "orangTua": {
+          "nama": "N/A",
+          "pekerjaan": "N/A",
+          "alamat": "N/A",
+          "noTelp": "N/A"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 82
+        },
+        "wawancara": {
+          "status": "Selesai",
+          "hasilId": "HW-003"
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-005",
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "10",
+      "namaLengkap": "Eden Smith",
+      "email": "eden.s@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/4.png",
+      "tanggalLahir": "2007-02-14",
+      "negaraAsal": "Perancis",
+      "prodiPilihan": "Desain Komunikasi Visual",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "22 Rue de la Paix, Paris",
+        "noWhatsapp": "+33123456789",
+        "noPassport": "FR9876543",
+        "orangTua": {
+          "nama": "Jean-Pierre Smith",
+          "pekerjaan": "Diplomat",
+          "alamat": "22 Rue de la Paix, Paris",
+          "noTelp": "+33123456780"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Menunggu Jadwal",
+          "nilai": null
+        },
+        "wawancara": {
+          "status": "Menunggu Jadwal",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-1765070580302",
+      "hasilWawancara": null,
+      "statusAkhir": "Wawancara Terjadwal"
+    },
+    {
+      "id": "11",
+      "namaLengkap": "Oliver Smith",
+      "email": "oliver.s@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/1.png",
+      "tanggalLahir": "2007-01-15",
+      "negaraAsal": "Inggris",
+      "prodiPilihan": "Desain Komunikasi Visual",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "221B Baker Street, London",
+        "noWhatsapp": "+442072243688",
+        "noPassport": "GBR123456",
+        "orangTua": {
+          "nama": "John Smith",
+          "pekerjaan": "Architect",
+          "alamat": "221B Baker Street, London",
+          "noTelp": "+442072243689"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 92
+        },
+        "wawancara": {
+          "status": "Menunggu Jadwal",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "12",
+      "namaLengkap": "Amelia Jones",
+      "email": "amelia.j@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/2.png",
+      "tanggalLahir": "2007-01-15",
+      "negaraAsal": "Amerika Serikat",
+      "prodiPilihan": "Desain Komunikasi Visual",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "1600 Pennsylvania Avenue, Washington DC",
+        "noWhatsapp": "+12024561111",
+        "noPassport": "USA112233",
+        "orangTua": {
+          "nama": "David Jones",
+          "pekerjaan": "Lawyer",
+          "alamat": "1600 Pennsylvania Avenue, Washington DC",
+          "noTelp": "+12024561112"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 88
+        },
+        "wawancara": {
+          "status": "Terjadwal",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-006",
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "13",
+      "namaLengkap": "Hiroshi Nakamura",
+      "email": "hiroshi.n@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/3.png",
+      "tanggalLahir": "2007-03-10",
+      "negaraAsal": "Jepang",
+      "prodiPilihan": "Desain Komunikasi Visual",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "1-1 Chiyoda, Tokyo",
+        "noWhatsapp": "+819012345678",
+        "noPassport": "JP0987654",
+        "orangTua": {
+          "nama": "Kenji Nakamura",
+          "pekerjaan": "Engineer",
+          "alamat": "1-1 Chiyoda, Tokyo",
+          "noTelp": "+819012345679"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": null,
+        "sertifikatPrestasi": "/berkas/6.pdf",
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Ditolak",
+          "catatan": "Berkas wajib 'Surat Rekomendasi' tidak diunggah."
+        },
+        "tesPengetahuan": {
+          "status": "Tidak Lanjut",
+          "nilai": null
+        },
+        "wawancara": {
+          "status": "Tidak Lanjut",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Menunggu Pemeriksaan",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Ditolak"
+    },
+    {
+      "id": "14",
+      "namaLengkap": "Isabella Rossi",
+      "email": "isabella.r@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/4.png",
+      "tanggalLahir": "2006-09-05",
+      "negaraAsal": "Italia",
+      "prodiPilihan": "Sastra Prancis",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Via del Corso, Rome",
+        "noWhatsapp": "+3906699991",
+        "noPassport": "ITA987654",
+        "orangTua": {
+          "nama": "Marco Rossi",
+          "pekerjaan": "Chef",
+          "alamat": "Via del Corso, Rome",
+          "noTelp": "+3906699992"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 85
+        },
+        "wawancara": {
+          "status": "Selesai",
+          "hasilId": "HW-004"
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": "W-007",
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "15",
+      "namaLengkap": "Pierre Dubois",
+      "email": "pierre.d@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/1.png",
+      "tanggalLahir": "2007-01-01",
+      "negaraAsal": "Perancis",
+      "prodiPilihan": "Sastra Prancis",
+      "jalurPendaftaran": "Beasiswa",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "7 Rue de Rivoli, Paris",
+        "noWhatsapp": "+33123456780",
+        "noPassport": "FR1122334",
+        "orangTua": {
+          "nama": "Luc Dubois",
+          "pekerjaan": "Blogger",
+          "alamat": "7 Rue de Rivoli, Paris",
+          "noTelp": "+33123456781"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": "/berkas/4.pdf",
+        "suratRekomendasi": "/berkas/5.pdf",
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 89
+        },
+        "wawancara": {
+          "status": "Menunggu Jadwal",
+          "hasilId": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "16",
+      "namaLengkap": "Budi Santoso",
+      "email": "budi.s@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/2.png",
+      "tanggalLahir": "2006-08-17",
+      "negaraAsal": "Indonesia",
+      "prodiPilihan": "Sistem Informasi",
+      "jalurPendaftaran": "Mandiri",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Jl. Merdeka No. 1, Jakarta",
+        "noWhatsapp": "+6281234567890",
+        "noPassport": "A1234567",
+        "orangTua": {
+          "nama": "Agus Santoso",
+          "pekerjaan": "Wiraswasta",
+          "alamat": "Jl. Merdeka No. 1, Jakarta",
+          "noTelp": "+6281234567891"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/8.pdf",
+        "kemampuanBahasaInggris": null,
+        "paspor": "/berkas/10.pdf",
+        "motivationLetter": null,
+        "suratRekomendasi": null,
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Ditolak",
+          "catatan": "Berkas wajib 'Kemampuan Bahasa Inggris' tidak diunggah."
+        },
+        "tesPengetahuan": {
+          "status": "Tidak Lanjut",
+          "nilai": null
+        }
+      },
+      "statusBerkas": "Tidak Lengkap",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Ditolak"
+    },
+    {
+      "id": "17",
+      "namaLengkap": "Siti Aminah",
+      "email": "siti.a@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/3.png",
+      "tanggalLahir": "2006-10-30",
+      "negaraAsal": "Malaysia",
+      "prodiPilihan": "Sistem Informasi",
+      "jalurPendaftaran": "Mandiri",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Jalan Ampang, Kuala Lumpur",
+        "noWhatsapp": "+60123456789",
+        "noPassport": "MYS445566",
+        "orangTua": {
+          "nama": "Ahmad bin Kassim",
+          "pekerjaan": "Pegawai Negeri",
+          "alamat": "Jalan Ampang, Kuala Lumpur",
+          "noTelp": "+60123456780"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": null,
+        "suratRekomendasi": null,
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Menunggu Pemeriksaan",
+          "catatan": null
+        },
+        "tesPengetahuan": {
+          "status": "Belum Dimulai",
+          "nilai": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi",
+      "tanggalVerifikasi": "2025-10-30T09:34:58.511Z",
+      "olehAdmin": "Sistem Verifikasi"
+    },
+    {
+      "id": "18",
+      "namaLengkap": "Wei Lin",
+      "email": "wei.l@example.com",
+      "jenisKelamin": "Wanita",
+      "foto": "/photos/4.png",
+      "tanggalLahir": "2007-02-18",
+      "negaraAsal": "Cina",
+      "prodiPilihan": "Sistem Informasi",
+      "jalurPendaftaran": "Mandiri",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "1 Wangfujing Street, Beijing",
+        "noWhatsapp": "+8613800138000",
+        "noPassport": "CHN789012",
+        "orangTua": {
+          "nama": "Lin Tao",
+          "pekerjaan": "Pengusaha",
+          "alamat": "1 Wangfujing Street, Beijing",
+          "noTelp": "+8613901390139"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": null,
+        "suratRekomendasi": null,
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Menunggu Jadwal",
+          "nilai": null
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Proses Seleksi"
+    },
+    {
+      "id": "19",
+      "namaLengkap": "Carlos Sanchez",
+      "email": "carlos.s@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/1.png",
+      "tanggalLahir": "2006-12-01",
+      "negaraAsal": "Spanyol",
+      "prodiPilihan": "Sistem Informasi",
+      "jalurPendaftaran": "Mandiri",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "Gran Via, Madrid",
+        "noWhatsapp": "+34123456789",
+        "noPassport": "ESP556677",
+        "orangTua": {
+          "nama": "Javier Sanchez",
+          "pekerjaan": "Bankir",
+          "alamat": "Gran Via, Madrid",
+          "noTelp": "+34123456780"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": null,
+        "suratRekomendasi": null,
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 95
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Diterima"
+    },
+    {
+      "id": "20",
+      "namaLengkap": "Mohammed Al-Farsi",
+      "email": "mohammed.f@example.com",
+      "jenisKelamin": "Pria",
+      "foto": "/photos/2.png",
+      "tanggalLahir": "2006-05-20",
+      "negaraAsal": "Arab Saudi",
+      "prodiPilihan": "Teknik Informatika",
+      "jalurPendaftaran": "Mandiri",
+      "batchId": "B2025",
+      "profilLengkap": {
+        "alamat": "King Fahd Road, Riyadh",
+        "noWhatsapp": "+966123456789",
+        "noPassport": "SAU889900",
+        "orangTua": {
+          "nama": "Fahd Al-Farsi",
+          "pekerjaan": "Insinyur Perminyakan",
+          "alamat": "King Fahd Road, Riyadh",
+          "noTelp": "+966123456780"
+        }
+      },
+      "berkas": {
+        "rapot": "/berkas/1.pdf",
+        "kemampuanBahasaInggris": "/berkas/2.pdf",
+        "paspor": "/berkas/3.pdf",
+        "motivationLetter": null,
+        "suratRekomendasi": null,
+        "sertifikatPrestasi": null,
+        "sertifikatKompetensi": null
+      },
+      "tahapanSeleksi": {
+        "seleksiBerkas": {
+          "status": "Lolos",
+          "catatan": "Lengkap"
+        },
+        "tesPengetahuan": {
+          "status": "Lolos",
+          "nilai": 60
+        }
+      },
+      "statusBerkas": "Lengkap",
+      "jadwalWawancaraId": null,
+      "hasilWawancara": null,
+      "statusAkhir": "Ditolak"
+    }
+  ],
+  "jadwalWawancara": [
+    {
+      "id": "W-001",
+      "prodi": "Teknik Informatika",
+      "pewawancara": "Dr. Alden Mitchell",
+      "staffAdmisi": "Andi Wijaya",
+      "waktu": "2025-10-20T09:00",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/123456001",
+      "pesertaIds": [
+        "5"
+      ]
+    },
+    {
+      "id": "W-002",
+      "prodi": "Hubungan Internasional",
+      "pewawancara": "Prof. Swan",
+      "staffAdmisi": "Citra Lestari",
+      "waktu": "2025-10-20T10:00",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/123456002",
+      "pesertaIds": [
+        "6"
+      ]
+    },
+    {
+      "id": "W-003",
+      "prodi": "Hubungan Internasional",
+      "pewawancara": "Prof. Michaelis",
+      "staffAdmisi": "Dewi Anggraini",
+      "waktu": "2025-10-20T11:00",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/123456003",
+      "pesertaIds": [
+        "7"
+      ]
+    },
+    {
+      "id": "W-004",
+      "prodi": "Hubungan Internasional",
+      "pewawancara": "Prof. Swan",
+      "staffAdmisi": "Eko Prasetyo",
+      "waktu": "2025-10-20T13:00",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/123456004",
+      "pesertaIds": [
+        "8"
+      ]
+    },
+    {
+      "id": "W-005",
+      "prodi": "Hubungan Internasional",
+      "pewawancara": "Prof. Michaelis",
+      "staffAdmisi": "Fajar Nugroho",
+      "waktu": "2025-10-20T14:00",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/123456005",
+      "pesertaIds": [
+        "9"
+      ]
+    },
+    {
+      "id": "W-006",
+      "prodi": "Desain Komunikasi Visual",
+      "pewawancara": "Dr. Brantz",
+      "staffAdmisi": "Gita Permata",
+      "waktu": "2025-10-21T09:00",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/123456006",
+      "pesertaIds": [
+        "12"
+      ]
+    },
+    {
+      "id": "W-007",
+      "prodi": "Sastra Prancis",
+      "pewawancara": "Dr. Elman",
+      "staffAdmisi": "Hadi Santoso",
+      "waktu": "2025-10-21T10:00",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/123456007",
+      "pesertaIds": [
+        "14"
+      ]
+    },
+    {
+      "id": "W-1761823751297",
+      "prodi": "Teknik Informatika",
+      "pewawancara": "Dr. Alden Mitchell",
+      "staffAdmisi": "Indah Cahyani",
+      "waktu": "2025-12-20T01:00",
+      "durasiMenit": 40,
+      "linkZoom": "https://tulalit.com",
+      "pesertaIds": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "W-1765005744248",
+      "prodi": "Teknik Informatika",
+      "pewawancara": "Dr. Alden Mitchell",
+      "staffAdmisi": "Andi Wijaya",
+      "waktu": "2025-12-07T14:22",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/aaa",
+      "pesertaIds": [
+        "2"
+      ]
+    },
+    {
+      "id": "W-1765040489073",
+      "prodi": "Teknik Informatika",
+      "pewawancara": "Prof. Melinda",
+      "staffAdmisi": "Andi Wijaya",
+      "waktu": "2025-12-07T16:58",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/ini-link-zoom",
+      "pesertaIds": [
+        "4"
+      ]
+    },
+    {
+      "id": "W-1765070580302",
+      "prodi": "Desain Komunikasi Visual",
+      "pewawancara": "Prof. Anya",
+      "staffAdmisi": "Andi Wijaya",
+      "waktu": "2025-12-07T12:10",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/id0101",
+      "pesertaIds": [
+        "10"
+      ]
+    }
+  ],
+  "hasilPenilaianWawancara": [
+    {
+      "id": "HW-001",
+      "calonMahasiswaId": "7",
+      "jadwalWawancaraId": "W-003",
+      "templatePenilaianId": "82ae",
+      "skorTotalWawancara": 96,
+      "jawaban": [
+        {
+          "poinId": "q1",
+          "jawaban": "Sangat tertarik dengan resolusi konflik dan peran UBN dalam diplomasi global.",
+          "skor": 95
+        },
+        {
+          "poinId": "q2",
+          "jawaban": "Memimpin delegasi Model UN sekolah saya dan memenangkan 'Best Delegate'.",
+          "skor": 95
+        },
+        {
+          "poinId": "q3",
+          "jawaban": "Kekuatan saya adalah analitis dan tenang di bawah tekanan. Kelemahan saya adalah terkadang terlalu perfeksionis.",
+          "skor": 90
+        },
+        {
+          "poinId": "q4",
+          "jawaban": "Saya berencana memimpin kelompok riset tentang diplomasi Asia Tenggara.",
+          "skor": 95
+        },
+        {
+          "poinId": "q5",
+          "jawaban": "Bekerja di kedutaan besar atau organisasi non-pemerintah internasional, fokus pada resolusi konflik.",
+          "skor": 95
+        },
+        {
+          "poinId": "q6",
+          "jawaban": "Sangat Penting",
+          "skor": 100
+        },
+        {
+          "poinId": "q7",
+          "jawaban": "Proaktif mencari solusi",
+          "skor": 100
+        },
+        {
+          "poinId": "q8",
+          "jawaban": "Sangat Baik",
+          "skor": 100
+        },
+        {
+          "poinId": "q9",
+          "jawaban": "Membagi tugas berdasarkan kekuatan tim dan menetapkan deadline yang jelas",
+          "skor": 90
+        },
+        {
+          "poinId": "q10",
+          "jawaban": "Menganalisis penyebab kegagalan untuk perbaikan",
+          "skor": 100
+        }
+      ],
+      "catatanPewawancara": "Kandidat yang luar biasa. Visi jelas, sangat analitis, dan elegan. Wajib diterima.",
+      "rekomendasiPredikat": "Sangat Direkomendasikan"
+    },
+    {
+      "id": "HW-002",
+      "calonMahasiswaId": "8",
+      "jadwalWawancaraId": "W-004",
+      "templatePenilaianId": "82ae",
+      "skorTotalWawancara": 42,
+      "jawaban": [
+        {
+          "poinId": "q1",
+          "jawaban": "Saya tidak terlalu yakin, mungkin karena terlihat keren.",
+          "skor": 30
+        },
+        {
+          "poinId": "q2",
+          "jawaban": "Saya pernah juara 3 lomba makan kerupuk.",
+          "skor": 40
+        },
+        {
+          "poinId": "q3",
+          "jawaban": "Kekuatan saya adalah saya elegan. Kelemahan? Tidak ada.",
+          "skor": 20
+        },
+        {
+          "poinId": "q4",
+          "jawaban": "Saya akan mengajar orang lain untuk menjadi elegan seperti saya.",
+          "skor": 50
+        },
+        {
+          "poinId": "q5",
+          "jawaban": "Menjadi orang yang sangat elegan.",
+          "skor": 50
+        },
+        {
+          "poinId": "q6",
+          "jawaban": "Sangat Penting",
+          "skor": 100
+        },
+        {
+          "poinId": "q7",
+          "jawaban": "Menunggu instruksi lebih lanjut",
+          "skor": 20
+        },
+        {
+          "poinId": "q8",
+          "jawaban": "Baik",
+          "skor": 70
+        },
+        {
+          "poinId": "q9",
+          "jawaban": "Mengambil alih kepemimpinan untuk memastikan semua berjalan lancar",
+          "skor": 20
+        },
+        {
+          "poinId": "q10",
+          "jawaban": "Merasa kecewa tetapi tetap berusaha",
+          "skor": 20
+        }
+      ],
+      "catatanPewawancara": "Jawaban tidak fokus dan terkesan meremehkan. Sangat tidak elegan. Tidak direkomendasikan.",
+      "rekomendasiPredikat": "Tidak Direkomendasikan"
+    },
+    {
+      "id": "HW-003",
+      "calonMahasiswaId": "9",
+      "jadwalWawancaraId": "W-005",
+      "templatePenilaianId": "82ae",
+      "skorTotalWawancara": 75,
+      "jawaban": [
+        {
+          "poinId": "q1",
+          "jawaban": "Saya ingin melindungi negara saya dari ancaman luar, dan HI adalah langkah pertamanya.",
+          "skor": 70
+        },
+        {
+          "poinId": "q2",
+          "jawaban": "Lulusan terbaik di akademi saya.",
+          "skor": 85
+        },
+        {
+          "poinId": "q3",
+          "jawaban": "Kekuatan saya adalah dedikasi tinggi dan tidak pernah menyerah. Kelemahan saya adalah saya kaku terhadap aturan.",
+          "skor": 70
+        },
+        {
+          "poinId": "q4",
+          "jawaban": "Saya akan memastikan semua mahasiswa asing merasa aman dan terlindungi dari ancaman.",
+          "skor": 75
+        },
+        {
+          "poinId": "q5",
+          "jawaban": "Bekerja di kementerian luar negeri, di bagian keamanan diplomatik.",
+          "skor": 80
+        },
+        {
+          "poinId": "q6",
+          "jawaban": "Sangat Penting",
+          "skor": 100
+        },
+        {
+          "poinId": "q7",
+          "jawaban": "Proaktif mencari solusi",
+          "skor": 90
+        },
+        {
+          "poinId": "q8",
+          "jawaban": "Baik",
+          "skor": 70
+        },
+        {
+          "poinId": "q9",
+          "jawaban": "Bekerja secara mandiri pada bagian saya",
+          "skor": 50
+        },
+        {
+          "poinId": "q10",
+          "jawaban": "Menganalisis penyebab kegagalan untuk perbaikan",
+          "skor": 60
+        }
+      ],
+      "catatanPewawancara": "Semangat tinggi, namun terkesan kaku dan sedikit obsesif terhadap satu topik (keamanan). Potensi ada, perlu diasah.",
+      "rekomendasiPredikat": "Dipertimbangkan"
+    },
+    {
+      "id": "HW-004",
+      "calonMahasiswaId": "14",
+      "jadwalWawancaraId": "W-007",
+      "templatePenilaianId": "82ae",
+      "skorTotalWawancara": 92,
+      "jawaban": [
+        {
+          "poinId": "q1",
+          "jawaban": "Sastra Prancis adalah hidup saya. Saya ingin mendalami karya Albert Camus dan filsafat eksistensialisme.",
+          "skor": 95
+        },
+        {
+          "poinId": "q2",
+          "jawaban": "Memenangkan kompetisi esai sastra tingkat nasional di Italia.",
+          "skor": 90
+        },
+        {
+          "poinId": "q3",
+          "jawaban": "Kekuatan saya adalah analisis teks yang mendalam. Kelemahan saya adalah kadang terlalu idealis.",
+          "skor": 85
+        },
+        {
+          "poinId": "q4",
+          "jawaban": "Saya ingin membuat klub buku dan pertukaran budaya sastra antara Italia dan Indonesia.",
+          "skor": 90
+        },
+        {
+          "poinId": "q5",
+          "jawaban": "Menjadi seorang penerjemah sastra profesional atau editor di rumah penerbitan besar.",
+          "skor": 90
+        },
+        {
+          "poinId": "q6",
+          "jawaban": "Sangat Penting",
+          "skor": 100
+        },
+        {
+          "poinId": "q7",
+          "jawaban": "Proaktif mencari solusi",
+          "skor": 90
+        },
+        {
+          "poinId": "q8",
+          "jawaban": "Sangat Baik",
+          "skor": 90
+        },
+        {
+          "poinId": "q9",
+          "jawaban": "Mendengarkan mtulalitkan dari semua anggota tim",
+          "skor": 90
+        },
+        {
+          "poinId": "q10",
+          "jawaban": "Belajar dari kesalahan dan mencoba pendekatan baru",
+          "skor": 100
+        }
+      ],
+      "catatanPewawancara": "Kandidat sangat fasih dan bersemangat. Pengetahuan sastra sangat baik. Visi jelas.",
+      "rekomendasiPredikat": "Sangat Direkomendasikan"
+    },
+    {
+      "id": "fb0f",
+      "calonMahasiswaId": "5",
+      "jadwalWawancaraId": "W-001",
+      "templatePenilaianId": "82ae",
+      "jawaban": [
+        {
+          "poinId": "q1",
+          "jawaban": "p",
+          "skor": 90
+        },
+        {
+          "poinId": "q2",
+          "jawaban": "p",
+          "skor": 90
+        },
+        {
+          "poinId": "q3",
+          "jawaban": "p",
+          "skor": 90
+        },
+        {
+          "poinId": "q4",
+          "jawaban": "p",
+          "skor": 90
+        },
+        {
+          "poinId": "q5",
+          "jawaban": "p",
+          "skor": 90
+        },
+        {
+          "poinId": "q6",
+          "jawaban": "Penting",
+          "skor": 90
+        },
+        {
+          "poinId": "q7",
+          "jawaban": "Meminta bantuan jika diperlukan",
+          "skor": 90
+        },
+        {
+          "poinId": "q8",
+          "jawaban": "Cukup",
+          "skor": 90
+        },
+        {
+          "poinId": "q9",
+          "jawaban": "Mendengarkan mtulalitkan dari semua anggota tim",
+          "skor": 90
+        },
+        {
+          "poinId": "q10",
+          "jawaban": "Merasa kecewa tetapi tetap berusaha",
+          "skor": 90
+        }
+      ],
+      "skorTotalWawancara": 90,
+      "catatanPewawancara": "",
+      "rekomendasiPredikat": "Sangat Direkomendasikan"
+    },
+    {
+      "id": "3dnyb8x7q",
+      "calonMahasiswaId": "6",
+      "jadwalWawancaraId": "W-002",
+      "templatePenilaianId": "82ae",
+      "skorTotalWawancara": 75,
+      "jawaban": [
+        {
+          "poinId": "q1",
+          "jawaban": "aaa",
+          "skor": 100
+        },
+        {
+          "poinId": "q2",
+          "jawaban": "a",
+          "skor": 20
+        },
+        {
+          "poinId": "q3",
+          "jawaban": "a",
+          "skor": 100
+        },
+        {
+          "poinId": "q4",
+          "jawaban": "aa",
+          "skor": 63
+        },
+        {
+          "poinId": "q5",
+          "jawaban": "aaa",
+          "skor": 80
+        },
+        {
+          "poinId": "q6",
+          "jawaban": "Cukup Penting",
+          "skor": 70
+        },
+        {
+          "poinId": "q7",
+          "jawaban": "Menunggu instruksi lebih lanjut",
+          "skor": 60
+        },
+        {
+          "poinId": "q8",
+          "jawaban": "Cukup",
+          "skor": 82
+        },
+        {
+          "poinId": "q9",
+          "jawaban": "Mengambil alih kepemimpinan untuk memastikan semua berjalan lancar",
+          "skor": 90
+        },
+        {
+          "poinId": "q10",
+          "jawaban": "Menganalisis penyebab kegagalan untuk perbaikan",
+          "skor": 80
+        }
+      ],
+      "catatanPewawancara": "aaa",
+      "rekomendasiPredikat": "Dipertimbangkan"
+    }
+  ],
+  "templatePenilaian": [
+    {
+      "namaTemplate": "Template Wawancara Beasiswa S1 2025",
+      "isAktif": false,
+      "poinPenilaian": [
+        {
+          "poinId": "p1",
+          "pertanyaan": "Jelaskan motivasi Anda memilih program studi ini di UBN.",
+          "tipe": "essay",
+          "pilihan": []
+        },
+        {
+          "poinId": "p2",
+          "pertanyaan": "Bagaimana Anda akan berkontribusi pada lingkungan kampus?",
+          "tipe": "essay",
+          "pilihan": []
+        },
+        {
+          "poinId": "p3",
+          "pertanyaan": "Seberapa baik kemampuan kepemimpinan Anda?",
+          "tipe": "multiple_choice",
+          "pilihan": [
+            "Sangat Baik",
+            "Baik",
+            "Cukup",
+            "Kurang"
+          ]
+        }
+      ],
+      "id": "TPL01"
+    },
+    {
+      "id": "82ae",
+      "namaTemplate": "Template Wawancara Umum 2025 (Aktif)",
+      "isAktif": true,
+      "poinPenilaian": [
+        {
+          "poinId": "q1",
+          "pertanyaan": "Apa motivasi utama Anda memilih program studi yang Anda tuju di universitas kami?",
+          "tipe": "essay",
+          "pilihan": []
+        },
+        {
+          "poinId": "q2",
+          "pertanyaan": "Ceritakan pencapaian terbesar Anda, baik di bidang akademik maupun non-akademik.",
+          "tipe": "essay",
+          "pilihan": []
+        },
+        {
+          "poinId": "q3",
+          "pertanyaan": "Apa kekuatan dan kelemahan terbesar yang Anda miliki?",
+          "tipe": "essay",
+          "pilihan": []
+        },
+        {
+          "poinId": "q4",
+          "pertanyaan": "Bagaimana Anda berencana untuk berkontribusi pada komunitas mahasiswa di UBN?",
+          "tipe": "essay",
+          "pilihan": []
+        },
+        {
+          "poinId": "q5",
+          "pertanyaan": "Di mana Anda melihat diri Anda lima tahun setelah lulus dari UBN?",
+          "tipe": "essay",
+          "pilihan": []
+        },
+        {
+          "poinId": "q6",
+          "pertanyaan": "Menurut Anda, seberapa penting integritas akademik bagi seorang mahasiswa?",
+          "tipe": "multiple_choice",
+          "pilihan": [
+            "Sangat Penting",
+            "Penting",
+            "Cukup Penting",
+            "Tidak Penting"
+          ]
+        },
+        {
+          "poinId": "q7",
+          "pertanyaan": "Ketika menghadapi kesulitan dalam sebuah proyek, apa langkah pertama yang Anda ambil?",
+          "tipe": "multiple_choice",
+          "pilihan": [
+            "Proaktif mencari solusi",
+            "Menunggu instruksi lebih lanjut",
+            "Meminta bantuan jika diperlukan",
+            "Mencari proyek lain"
+          ]
+        },
+        {
+          "poinId": "q8",
+          "pertanyaan": "Bagaimana Anda menilai kemampuan adaptasi Anda di lingkungan baru?",
+          "tipe": "multiple_choice",
+          "pilihan": [
+            "Sangat Baik",
+            "Baik",
+            "Cukup",
+            "Kurang"
+          ]
+        },
+        {
+          "poinId": "q9",
+          "pertanyaan": "Strategi apa yang paling efektif bagi Anda saat bekerja dalam tim?",
+          "tipe": "multiple_choice",
+          "pilihan": [
+            "Membagi tugas berdasarkan kekuatan tim dan menetapkan deadline yang jelas",
+            "Mengambil alih kepemimpinan untuk memastikan semua berjalan lancar",
+            "Mendengarkan mtulalitkan dari semua anggota tim",
+            "Bekerja secara mandiri pada bagian saya"
+          ]
+        },
+        {
+          "poinId": "q10",
+          "pertanyaan": "Bagaimana Anda merespons kegagalan atau kritik konstruktif?",
+          "tipe": "multiple_choice",
+          "pilihan": [
+            "Belajar dari kesalahan dan mencoba pendekatan baru",
+            "Menganalisis penyebab kegagalan untuk perbaikan",
+            "Merasa kecewa tetapi tetap berusaha",
+            "Meminta feedback lebih lanjut untuk pemahaman"
+          ]
+        }
+      ]
+    }
+  ],
+  "staffAdmisi": [
+    {
+      "id": "1",
+      "nama": "Andi Wijaya"
+    },
+    {
+      "id": "2",
+      "nama": "Citra Lestari"
+    },
+    {
+      "id": "3",
+      "nama": "Dewi Anggraini"
+    },
+    {
+      "id": "4",
+      "nama": "Eko Prasetyo"
+    },
+    {
+      "id": "5",
+      "nama": "Fajar Nugroho"
+    },
+    {
+      "id": "6",
+      "nama": "Gita Permata"
+    },
+    {
+      "id": "7",
+      "nama": "Hadi Santoso"
+    },
+    {
+      "id": "8",
+      "nama": "Indah Cahyani"
+    },
+    {
+      "id": "9",
+      "nama": "Joko Susilo"
+    },
+    {
+      "id": "10",
+      "nama": "Kurniawati"
+    }
+  ],
+  "pewawancara": [
+    {
+      "id": "p1",
+      "nama": "Dr. Alden Mitchell",
+      "prodi": "Teknik Informatika"
+    },
+    {
+      "id": "p2",
+      "nama": "Prof. Melinda",
+      "prodi": "Teknik Informatika"
+    },
+    {
+      "id": "p3",
+      "nama": "Dr. Surya",
+      "prodi": "Sistem Informasi"
+    },
+    {
+      "id": "p4",
+      "nama": "Prof. Budi",
+      "prodi": "Sistem Informasi"
+    },
+    {
+      "id": "p5",
+      "nama": "Dr. Brantz",
+      "prodi": "Desain Komunikasi Visual"
+    },
+    {
+      "id": "p6",
+      "nama": "Prof. Anya",
+      "prodi": "Desain Komunikasi Visual"
+    },
+    {
+      "id": "p7",
+      "nama": "Prof. Swan",
+      "prodi": "Hubungan Internasional"
+    },
+    {
+      "id": "p8",
+      "nama": "Prof. Michaelis",
+      "prodi": "Hubungan Internasional"
+    },
+    {
+      "id": "p9",
+      "nama": "Dr. Elman",
+      "prodi": "Sastra Prancis"
+    },
+    {
+      "id": "p10",
+      "nama": "Dr. Henrry",
+      "prodi": "Sastra Prancis"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "N001",
+      "calonMahasiswaId": "5",
+      "pesan": "Jadwal wawancara Anda telah ditentukan pada 20 Oktober 2025, pukul 09:00. Silakan periksa detailnya.",
+      "isRead": true,
+      "timestamp": "2025-10-18T10:30:00Z"
+    },
+    {
+      "id": "N003",
+      "calonMahasiswaId": "16",
+      "pesan": "Mohon maaf, pendaftaran Anda tidak dapat dilanjutkan karena dokumen wajib 'Kemampuan Bahasa Inggris' tidak lengkap.",
+      "isRead": false,
+      "timestamp": "2025-10-19T11:00:00Z"
+    },
+    {
+      "id": "N004",
+      "calonMahasiswaId": "3",
+      "pesan": "Selamat! Berkas Anda telah lolos verifikasi. Tahap selanjutnya adalah Tes Pengetahuan.",
+      "isRead": false,
+      "timestamp": "2025-10-19T11:15:00Z"
+    },
+    {
+      "id": "N005",
+      "calonMahasiswaId": "7",
+      "pesan": "Selamat! Anda dinyatakan DITERIMA sebagai mahasiswa baru UBN. Silakan cek email untuk langkah registrasi ulang.",
+      "isRead": false,
+      "timestamp": "2025-10-22T14:00:00Z"
+    },
+    {
+      "id": "N006",
+      "calonMahasiswaId": "8",
+      "pesan": "Mohon maaf, setelah melalui seluruh tahapan seleksi, Anda dinyatakan DITOLAK. Tetap semangat!",
+      "isRead": true,
+      "timestamp": "2025-10-22T14:01:00Z"
+    },
+    {
+      "id": "N007",
+      "calonMahasiswaId": "19",
+      "pesan": "Selamat! Anda dinyatakan DITERIMA sebagai mahasiswa baru UBN. Silakan cek email untuk langkah registrasi ulang.",
+      "isRead": false,
+      "timestamp": "2025-10-22T14:02:00Z"
+    },
+    {
+      "id": "N008",
+      "calonMahasiswaId": "20",
+      "pesan": "Mohon maaf, setelah melalui seluruh tahapan seleksi, Anda dinyatakan DITOLAK. Tetap semangat!",
+      "isRead": false,
+      "timestamp": "2025-10-22T14:03:00Z"
+    },
+    {
+      "id": "N009",
+      "calonMahasiswaId": "13",
+      "pesan": "Mohon maaf, pendaftaran Anda tidak dapat dilanjutkan karena dokumen wajib 'Surat Rekomendasi' tidak lengkap.",
+      "isRead": false,
+      "timestamp": "2025-10-19T11:30:00Z"
+    }
+  ],
+  "batchPendaftaran": [
+    {
+      "id": "B2025",
+      "namaBatch": "Penerimaan Mahasiswa Asing Gelombang 1 2025",
+      "tanggalMulai": "2025-09-01T00:00:00Z",
+      "tanggalSelesai": "2025-10-30T23:59:59Z",
+      "isAktif": true,
+      "jalurYangDibuka": [
+        "Beasiswa",
+        "Mandiri"
+      ],
+      "prodiYangDibuka": [
+        "Teknik Informatika",
+        "Sistem Informasi",
+        "Desain Komunikasi Visual",
+        "Hubungan Internasional",
+        "Sastra Prancis"
+      ]
+    },
+    {
+      "id": "B2024-G2",
+      "namaBatch": "Penerimaan Mahasiswa Asing Gelombang 2 2024",
+      "tanggalMulai": "2024-11-01T00:00:00Z",
+      "tanggalSelesai": "2024-12-20T23:59:59Z",
+      "isAktif": false,
+      "jalurYangDibuka": [
+        "Beasiswa"
+      ],
+      "prodiYangDibuka": [
+        "Teknik Informatika",
+        "Sistem Informasi"
+      ]
+    }
+  ],
+  "prodi": [
+    {
+      "id": "IF",
+      "nama": "Teknik Informatika"
+    },
+    {
+      "id": "SI",
+      "nama": "Sistem Informasi"
+    },
+    {
+      "id": "DKV",
+      "nama": "Desain Komunikasi Visual"
+    },
+    {
+      "id": "HI",
+      "nama": "Hubungan Internasional"
+    },
+    {
+      "id": "SP",
+      "nama": "Sastra Prancis"
+    }
+  ]
+}

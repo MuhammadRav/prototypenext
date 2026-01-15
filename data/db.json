@@ -149,12 +149,10 @@
           "hasilId": null
         }
       },
-      "statusBerkas": "Lengkap",
+      "statusBerkas": "Menunggu Pemeriksaan",
       "jadwalWawancaraId": "W-1761823751297",
       "hasilWawancara": null,
-      "statusAkhir": "Proses Seleksi",
-      "tanggalVerifikasi": "2025-12-24T13:07:44.596Z",
-      "olehAdmin": "Admin Verifikasi"
+      "statusAkhir": "Proses Seleksi"
     },
     {
       "id": "4",
@@ -556,9 +554,9 @@
         }
       },
       "statusBerkas": "Lengkap",
-      "jadwalWawancaraId": null,
+      "jadwalWawancaraId": "W-1768447268416",
       "hasilWawancara": null,
-      "statusAkhir": "Proses Seleksi"
+      "statusAkhir": "Wawancara Terjadwal"
     },
     {
       "id": "12",
@@ -1126,6 +1124,18 @@
       "pesertaIds": [
         "10"
       ]
+    },
+    {
+      "id": "W-1768447268416",
+      "prodi": "Desain Komunikasi Visual",
+      "pewawancara": "Dr. Brantz",
+      "staffAdmisi": "Andi Wijaya",
+      "waktu": "2026-01-16T10:20",
+      "durasiMenit": 20,
+      "linkZoom": "https://zoom.us/j/p",
+      "pesertaIds": [
+        "11"
+      ]
     }
   ],
   "hasilPenilaianWawancara": [
@@ -1498,29 +1508,6 @@
   ],
   "templatePenilaian": [
     {
-      "id": "TPL-1766592558463",
-      "namaTemplate": "TEMPLATE BARU",
-      "startDate": "2026-01-11",
-      "endDate": "2026-02-07",
-      "poinPenilaian": [
-        {
-          "poinId": "q1-1766592557435",
-          "pertanyaan": "essai",
-          "tipe": "essay",
-          "pilihan": []
-        },
-        {
-          "poinId": "q2-1766592557435",
-          "pertanyaan": "qw",
-          "tipe": "multiple_choice",
-          "pilihan": [
-            "q",
-            "w"
-          ]
-        }
-      ]
-    },
-    {
       "namaTemplate": "Template Wawancara Beasiswa S1 2025",
       "isAktif": false,
       "poinPenilaian": [
@@ -1548,9 +1535,7 @@
           ]
         }
       ],
-      "id": "TPL01",
-      "startDate": "2025-12-23",
-      "endDate": "2025-12-26"
+      "id": "TPL01"
     },
     {
       "id": "82ae",
@@ -1640,22 +1625,6 @@
             "Menganalisis penyebab kegagalan untuk perbaikan",
             "Merasa kecewa tetapi tetap berusaha",
             "Meminta feedback lebih lanjut untuk pemahaman"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "TPL-1766556948881",
-      "namaTemplate": "yang baru",
-      "isAktif": false,
-      "poinPenilaian": [
-        {
-          "poinId": "q1-1766556948845",
-          "pertanyaan": "halo",
-          "tipe": "multiple_choice",
-          "pilihan": [
-            "halo",
-            "halo1"
           ]
         }
       ]

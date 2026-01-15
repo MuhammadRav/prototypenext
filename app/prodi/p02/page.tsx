@@ -38,8 +38,8 @@ const DOC_CONFIG = [
   { id: 'dokumenPendukung', label: 'Dok. Lainnya', category: 'tambahan', icon: FileText },
 ];
 
-const calcPred = (t: number, w: number) => {
-  const score = (t + w) / 2;
+// UPDATED: Logic Predikat Murni dari Skor Wawancara (ADM07)
+const calcPred = (score: number) => {
   if (score >= 90) return 'Sangat Direkomendasikan';
   if (score >= 80) return 'Direkomendasikan';
   if (score >= 70) return 'Dipertimbangkan';
@@ -196,7 +196,7 @@ export default function Adm02Page() {
     }
   }, [activeDocIndex, leftPanelMode, availableDocs]);
 
-  // --- CALCULATION ---
+  // --- CALCULATION (UPDATED LOGIC ADM07) ---
   const calculation = useMemo(() => {
     if (!template || !template.poinPenilaian || template.poinPenilaian.length === 0 || !selectedCandidate) {
         return { avgWawancara: 0, tesScore: 0, pred: 'Menunggu Input...' };
@@ -204,15 +204,18 @@ export default function Adm02Page() {
     const scores = Object.values(formScores);
     const totalWawancara = scores.reduce((a, b) => a + (b || 0), 0);
     const divisor = template.poinPenilaian.length;
+    // Rata-rata MURNI dari hasil wawancara
     const avgWawancara = divisor > 0 ? Math.round(totalWawancara / divisor) : 0;
     
-    // @ts-ignore
+    // @ts-ignore - Ambil nilai tes hanya untuk referensi
     const tesScore = selectedCandidate.tahapanSeleksi?.tesPengetahuan?.nilai || 0;
     const allFilled = template.poinPenilaian.every((p:any) => formScores[p.poinId] !== undefined && formScores[p.poinId] >= 0);
     
+    // LOGIC FIX: Rekomendasi hanya berdasarkan performa wawancara
     return { 
-        avgWawancara, tesScore,
-        pred: allFilled ? calcPred(tesScore, avgWawancara) : 'Menunggu Input...' 
+        avgWawancara, 
+        tesScore,
+        pred: allFilled ? calcPred(avgWawancara) : 'Menunggu Input...' 
     };
   }, [formScores, template, selectedCandidate]);
 
@@ -220,7 +223,7 @@ export default function Adm02Page() {
   const handleOpenDoc = (idx: number) => {
     setActiveDocIndex(idx);
     setLeftPanelMode('preview');
-    if (window.innerWidth < 1400) setSidebarOpen(false);
+    if (window.innerWidth < 1024) setSidebarOpen(false);
   };
 
   const handleClosePreview = () => {
@@ -259,7 +262,11 @@ export default function Adm02Page() {
     <div className="flex h-screen bg-[#FFFFFF] font-sans overflow-hidden text-[#1C1C1A]">
       
       {/* 1. SIDEBAR (Collapsible) */}
-      <aside className={`bg-white border-r border-[#E5E5E5] flex flex-col flex-shrink-0 z-30 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${isSidebarOpen ? 'w-[320px] translate-x-0' : 'w-0 -translate-x-full opacity-0'}`}>
+      <aside 
+        className={`bg-white border-r border-[#E5E5E5] flex flex-col flex-shrink-0 z-30 transition-all duration-300 ease-in-out ${
+          isSidebarOpen ? 'w-[320px] translate-x-0' : 'w-0 -translate-x-full opacity-0 overflow-hidden'
+        }`}
+      >
         <div className="p-6 pb-4 border-b border-[#E5E5E5] bg-white min-w-[320px]">
           <h2 className="text-xl font-serif text-[#6F0B0B] mb-1">Antrian Wawancara</h2>
           <p className="text-[10px] text-[#A3A3A3] uppercase tracking-widest mb-4">Total: {filteredCandidates.length} Peserta</p>
@@ -280,7 +287,7 @@ export default function Adm02Page() {
                 <ChevronDown className="absolute right-0 top-2 w-3.5 h-3.5 text-[#A3A3A3] pointer-events-none"/>
             </div>
 
-            {/* Filter Status (Updated) */}
+            {/* Filter Status */}
             <div className="relative">
                 <div className={`w-3.5 h-3.5 absolute left-0 top-2 rounded-full border border-current ${statusFilter === 'semua' ? 'text-gray-400' : statusFilter === 'sudah' ? 'bg-[#2F5D40] text-[#2F5D40]' : 'bg-transparent text-[#6F0B0B]'}`}></div>
                 <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} className="w-full pl-6 py-1.5 border-b border-[#E5E5E5] text-xs font-bold uppercase tracking-widest bg-transparent outline-none cursor-pointer appearance-none">
@@ -321,8 +328,8 @@ export default function Adm02Page() {
         </div>
       </aside>
 
-      {/* 2. MAIN AREA */}
-      <main className="flex-1 flex flex-col min-w-0 bg-[#F5F5F5] relative">
+      {/* 2. MAIN AREA (Flexible) */}
+      <main className="flex-1 flex flex-col min-w-0 bg-[#F5F5F5] relative transition-all duration-300">
         {!selectedCandidate ? (
            <div className="flex flex-col items-center justify-center h-full text-center p-12 opacity-50">
              <LayoutTemplate className="w-12 h-12 text-[#A3A3A3] mb-4"/>
@@ -334,7 +341,7 @@ export default function Adm02Page() {
             {/* GLOBAL HEADER */}
             <header className="h-16 bg-white border-b border-[#E5E5E5] flex items-center justify-between px-6 shrink-0 z-20 shadow-sm">
                 <div className="flex items-center gap-4">
-                    <button onClick={() => setSidebarOpen(!isSidebarOpen)} className="text-[#A3A3A3] hover:text-[#1C1C1A] transition-colors">
+                    <button onClick={() => setSidebarOpen(!isSidebarOpen)} className="text-[#A3A3A3] hover:text-[#1C1C1A] transition-colors focus:outline-none">
                         {isSidebarOpen ? <PanelLeftClose className="w-5 h-5"/> : <PanelLeftOpen className="w-5 h-5"/>}
                     </button>
                     <div className="w-px h-6 bg-[#E5E5E5]"></div>
@@ -347,22 +354,22 @@ export default function Adm02Page() {
             </header>
 
             {/* SPLIT CONTENT */}
-            <div className="flex-1 flex overflow-hidden">
+            <div className="flex-1 flex overflow-hidden w-full">
                 
-                {/* --- LEFT PANEL: PROFIL / PREVIEW (50% or 40%) --- */}
-                <div className={`transition-all duration-300 border-r border-[#E5E5E5] flex flex-col relative bg-white ${isSidebarOpen ? 'w-5/12' : 'w-1/2'}`}>
+                {/* --- LEFT PANEL: PROFIL / PREVIEW --- */}
+                <div className={`transition-all duration-300 ease-in-out border-r border-[#E5E5E5] flex flex-col relative bg-white ${isSidebarOpen ? 'w-5/12' : 'w-1/2'} min-w-0`}>
                     
                     {/* MODE 1: PROFIL KANDIDAT LENGKAP */}
                     <div className={`absolute inset-0 flex flex-col bg-white transition-opacity duration-300 ${leftPanelMode === 'profil' ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}`}>
-                        <div className="p-8 overflow-y-auto custom-scroll">
+                        <div className="p-8 overflow-y-auto custom-scroll h-full">
                             
                             {/* Header Image & Basic Info */}
                             <div className="flex items-start gap-6 mb-8 border-b border-[#E5E5E5] pb-6">
                                 <img src={selectedCandidate.foto || "/placeholder.png"} className="w-24 h-32 object-cover border border-[#E5E5E5] shadow-md bg-gray-50" />
-                                <div className="space-y-4 flex-1">
+                                <div className="space-y-4 flex-1 min-w-0">
                                     <div>
                                         <InfoLabel>Nama Lengkap</InfoLabel>
-                                        <p className="font-serif text-xl text-[#1C1C1A]">{selectedCandidate.namaLengkap}</p>
+                                        <p className="font-serif text-xl text-[#1C1C1A] truncate">{selectedCandidate.namaLengkap}</p>
                                     </div>
                                     <div className="grid grid-cols-2 gap-4">
                                         <div><InfoLabel>ID Pendaftaran</InfoLabel><InfoValue className="font-mono">{selectedCandidate.id}</InfoValue></div>
@@ -377,23 +384,23 @@ export default function Adm02Page() {
                             <SectionHeader title="Kontak Pribadi & Identitas" icon={User} />
                             <div className="grid grid-cols-1 gap-y-4 mb-8 pl-2">
                                 <div className="flex items-start gap-3">
-                                    <Mail className="w-4 h-4 text-gray-300 mt-1"/>
-                                    <div className="flex-1">
+                                    <Mail className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0"/>
+                                    <div className="flex-1 min-w-0">
                                         <InfoLabel>Alamat Email</InfoLabel>
-                                        <InfoValue>{selectedCandidate.email}</InfoValue>
+                                        <InfoValue className="truncate">{selectedCandidate.email}</InfoValue>
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="flex items-start gap-3">
-                                        <CreditCard className="w-4 h-4 text-gray-300 mt-1"/>
-                                        <div className="flex-1">
+                                        <CreditCard className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0"/>
+                                        <div className="flex-1 min-w-0">
                                             <InfoLabel>Nomor Paspor</InfoLabel>
                                             <InfoValue>{selectedCandidate.nomorPaspor || selectedCandidate.nik || '-'}</InfoValue>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <Phone className="w-4 h-4 text-gray-300 mt-1"/>
-                                        <div className="flex-1">
+                                        <Phone className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0"/>
+                                        <div className="flex-1 min-w-0">
                                             <InfoLabel>Nomor HP</InfoLabel>
                                             <InfoValue>{selectedCandidate.telepon || '-'}</InfoValue>
                                         </div>
@@ -426,8 +433,8 @@ export default function Adm02Page() {
                             {/* Section: Domisili */}
                             <SectionHeader title="Domisili" icon={MapPin} />
                             <div className="flex items-start gap-3 mb-8 pl-2">
-                                <MapPin className="w-4 h-4 text-gray-300 mt-1"/>
-                                <div className="flex-1">
+                                <MapPin className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0"/>
+                                <div className="flex-1 min-w-0">
                                     <InfoLabel>Alamat Lengkap</InfoLabel>
                                     <InfoValue className="leading-relaxed">
                                         {selectedCandidate.profilLengkap?.alamat || '123 Ostania Street, Berlint'}
@@ -474,7 +481,7 @@ export default function Adm02Page() {
                                     <X className="w-5 h-5"/>
                                 </button>
                                 <span className="w-px h-4 bg-[#333]"></span>
-                                <span className="text-xs font-bold text-[#E5E5E5] uppercase tracking-wider truncate">{currentDoc?.label || 'Dokumen'}</span>
+                                <span className="text-xs font-bold text-[#E5E5E5] uppercase tracking-wider truncate max-w-[150px]">{currentDoc?.label || 'Dokumen'}</span>
                             </div>
                             <div className="flex items-center">
                                 <button onClick={() => setActiveDocIndex(i => Math.max(0, i - 1))} disabled={activeDocIndex === 0} className="p-2 text-[#666] hover:text-white disabled:opacity-20"><ChevronLeft className="w-4 h-4"/></button>
@@ -488,16 +495,18 @@ export default function Adm02Page() {
                             {isLoadingFile && <Loader2 className="w-8 h-8 text-[#6F0B0B] animate-spin" />}
                             {!isLoadingFile && !isFileValid && <div className="text-center"><FileWarning className="w-8 h-8 text-[#EF4444] mx-auto mb-2"/><p className="text-xs text-[#888]">Gagal memuat file</p></div>}
                             {!isLoadingFile && isFileValid && currentDoc && (
-                                currentDoc.type === 'pdf' 
-                                ? <iframe src={`${currentDoc.url}#toolbar=0&navpanes=0`} className="w-full h-full border-none bg-white"/>
-                                : <div className="w-full h-full overflow-auto p-4 flex items-center justify-center"><img src={currentDoc.url} className="max-w-full shadow-2xl border-4 border-white" alt="Doc"/></div>
+                                <div key={currentDoc.url} className="w-full h-full flex items-center justify-center">
+                                    {currentDoc.type === 'pdf' 
+                                    ? <iframe src={`${currentDoc.url}#toolbar=0&navpanes=0`} className="w-full h-full border-none bg-white"/>
+                                    : <div className="w-full h-full overflow-auto p-4 flex items-center justify-center"><img src={currentDoc.url} className="max-w-full shadow-2xl border-4 border-white" alt="Doc"/></div>}
+                                </div>
                             )}
                         </div>
                     </div>
                 </div>
 
-                {/* --- RIGHT PANEL: FORM PENILAIAN (Fixed) --- */}
-                <div className={`flex-1 bg-[#FAFAFA] flex flex-col overflow-hidden relative ${isSidebarOpen ? 'w-7/12' : 'w-1/2'}`}>
+                {/* --- RIGHT PANEL: FORM PENILAIAN --- */}
+                <div className={`flex-1 bg-[#FAFAFA] flex flex-col overflow-hidden relative transition-all duration-300 ease-in-out min-w-0`}>
                     {/* @ts-ignore */}
                     {results.some(r => r.calonMahasiswaId === selectedCandidate.id) ? (
                         <div className="flex flex-col items-center justify-center h-full text-center p-12">
@@ -517,8 +526,8 @@ export default function Adm02Page() {
                                         <div key={p.poinId} className="bg-white p-6 border border-[#E5E5E5] shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:border-[#D4D4D4] transition-colors">
                                             <div className="flex gap-4 mb-4">
                                                 <span className="text-lg font-serif font-bold text-[#E5E5E5]">0{idx+1}</span>
-                                                <div className="flex-1">
-                                                    <p className="font-serif text-[#1C1C1A] text-lg leading-snug mb-4">{p.pertanyaan}</p>
+                                                <div className="flex-1 min-w-0">
+                                                    <p className="font-serif text-[#1C1C1A] text-lg leading-snug mb-4 break-words">{p.pertanyaan}</p>
                                                     
                                                     {/* Control Area */}
                                                     <div className="grid grid-cols-12 gap-4">
@@ -540,23 +549,23 @@ export default function Adm02Page() {
                                                                 <label className="absolute -top-2 left-2 px-1 bg-white text-[8px] font-bold text-[#A3A3A3] uppercase tracking-widest">Catatan / Jawaban</label>
                                                                 {p.tipe === 'essay' ? (
                                                                     <textarea 
-                                                                        rows={2}
-                                                                        value={formAnswers[p.poinId] || ''} 
-                                                                        onChange={(e) => setFormAnswers({...formAnswers, [p.poinId]: e.target.value})} 
-                                                                        className="w-full h-full border border-[#E5E5E5] p-3 text-sm font-serif focus:border-[#6F0B0B] outline-none resize-none transition-colors"
-                                                                        placeholder="Ketik catatan..."
+                                                                            rows={2}
+                                                                            value={formAnswers[p.poinId] || ''} 
+                                                                            onChange={(e) => setFormAnswers({...formAnswers, [p.poinId]: e.target.value})} 
+                                                                            className="w-full h-full border border-[#E5E5E5] p-3 text-sm font-serif focus:border-[#6F0B0B] outline-none resize-none transition-colors"
+                                                                            placeholder="Ketik catatan..."
                                                                     />
                                                                 ) : (
                                                                     <div className="h-full border border-[#E5E5E5] px-3 flex items-center relative">
-                                                                         <select 
-                                                                            value={formAnswers[p.poinId] || ''} 
-                                                                            onChange={(e) => setFormAnswers({...formAnswers, [p.poinId]: e.target.value})}
-                                                                            className="w-full bg-transparent outline-none text-sm font-serif appearance-none z-10 cursor-pointer"
-                                                                         >
-                                                                            <option value="" disabled>Pilih Opsi</option>
-                                                                            {p.pilihan?.map((opt:string, i:number) => <option key={i} value={opt}>{opt}</option>)}
-                                                                         </select>
-                                                                         <ChevronDown className="absolute right-3 w-4 h-4 text-[#A3A3A3]"/>
+                                                                             <select 
+                                                                                value={formAnswers[p.poinId] || ''} 
+                                                                                onChange={(e) => setFormAnswers({...formAnswers, [p.poinId]: e.target.value})}
+                                                                                className="w-full bg-transparent outline-none text-sm font-serif appearance-none z-10 cursor-pointer"
+                                                                             >
+                                                                                <option value="" disabled>Pilih Opsi</option>
+                                                                                {p.pilihan?.map((opt:string, i:number) => <option key={i} value={opt}>{opt}</option>)}
+                                                                             </select>
+                                                                             <ChevronDown className="absolute right-3 w-4 h-4 text-[#A3A3A3]"/>
                                                                     </div>
                                                                 )}
                                                             </div>
@@ -569,12 +578,12 @@ export default function Adm02Page() {
 
                                     {/* Final Note */}
                                     <div className="bg-[#FAFAFA] border-t border-[#E5E5E5] pt-6">
-                                        <label className="text-[10px] font-bold text-[#A3A3A3] uppercase tracking-widest block mb-3">Catatan Umum (Opsional)</label>
-                                        <textarea 
-                                            value={formNote} onChange={(e) => setFormNote(e.target.value)}
-                                            className="w-full p-4 border border-[#E5E5E5] bg-white text-sm font-serif outline-none focus:border-[#6F0B0B] h-24 resize-none"
-                                            placeholder="Kesimpulan pewawancara..."
-                                        />
+                                            <label className="text-[10px] font-bold text-[#A3A3A3] uppercase tracking-widest block mb-3">Catatan Umum (Opsional)</label>
+                                            <textarea 
+                                                value={formNote} onChange={(e) => setFormNote(e.target.value)}
+                                                className="w-full p-4 border border-[#E5E5E5] bg-white text-sm font-serif outline-none focus:border-[#6F0B0B] h-24 resize-none"
+                                                placeholder="Kesimpulan pewawancara..."
+                                            />
                                     </div>
                                 </div>
                             </div>
@@ -583,9 +592,9 @@ export default function Adm02Page() {
                             <div className="p-6 bg-white border-t border-[#E5E5E5] shadow-[0_-5px_20px_rgba(0,0,0,0.03)] z-20 shrink-0">
                                 <div className="max-w-3xl mx-auto flex items-center justify-between">
                                     <div className="flex gap-8">
-                                        <div><span className="block text-[8px] font-bold text-[#A3A3A3] uppercase tracking-widest">Tes Tulis</span><span className="font-serif text-lg">{calculation.tesScore}</span></div>
+                                        <div><span className="block text-[8px] font-bold text-[#A3A3A3] uppercase tracking-widest">Tes Tulis (Info)</span><span className="font-serif text-lg">{calculation.tesScore || '-'}</span></div>
                                         <div className="w-px bg-[#E5E5E5]"></div>
-                                        <div><span className="block text-[8px] font-bold text-[#A3A3A3] uppercase tracking-widest">Rata-Rata</span><span className="font-serif text-lg font-bold text-[#6F0B0B]">{calculation.avgWawancara}</span></div>
+                                        <div><span className="block text-[8px] font-bold text-[#A3A3A3] uppercase tracking-widest">Skor Wawancara</span><span className="font-serif text-lg font-bold text-[#6F0B0B]">{calculation.avgWawancara}</span></div>
                                         <div className="w-px bg-[#E5E5E5]"></div>
                                         <div><span className="block text-[8px] font-bold text-[#A3A3A3] uppercase tracking-widest">Rekomendasi</span><span className="font-serif text-lg text-[#1C1C1A]">{calculation.pred}</span></div>
                                     </div>
